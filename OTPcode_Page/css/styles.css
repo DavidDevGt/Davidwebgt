@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/bgwhite1.jpg);
+    background-size: cover;
+    color: #0e0c0c;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+span {
+    margin-block-start: 0.2rem;
+    margin-block-end: 1.8rem;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.otp-field {
+    padding: 1rem;
+    font-size: 3rem;
+    color: #484848;
+    height: 4rem;
+    text-align: center;
+    aspect-ratio: 1;
+    font-variant-numeric: tabular-nums;
+    border: 1px solid #555353;
+    border-radius: 0.5rem;
+}
+
+.otp-field:invalid {
+    outline-color: red;
+}
